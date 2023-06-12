@@ -1,17 +1,16 @@
 pipeline {
-    agent any
+   agent any
 
     stages {
         stage('Checkout code') {
-        steps {
-            checkout scm
-        }
-
-        stage ('Deployment Stage') {
+		  steps {
+		      checkout scm
+             }
+          }
+        stage('Deployment Stage') {
             steps {
                  echo 'Completed'
                 }
             }
         }
-    }
 }
